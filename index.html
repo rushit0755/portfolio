@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushit Prajapati | Portfolio | BCA Student & AI/ML Enthusiast</title>
+    <meta name="description"
+        content="Personal portfolio of Rushit Prajapati, a BCA student, AI & Machine Learning enthusiast, and Front-End Developer. Explore education, projects, skills, and contact details.">
+    <meta name="keywords"
+        content="Rushit Prajapati, Portfolio, BCA Student, AI, Machine Learning, Web Developer, Front-End Developer, Python, Django, Responsive Design">
+    <meta name="author" content="Rushit Prajapati">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rushit Prajapati | Portfolio">
+    <meta property="og:description"
+        content="Personal portfolio of Rushit Prajapati, a BCA student, AI & Machine Learning enthusiast, and Front-End Developer.">
+    <meta property="og:image" content="images/portfolio-project.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Rushit Prajapati | Portfolio">
+    <meta property="twitter:description"
+        content="Personal portfolio of Rushit Prajapati, a BCA student, AI & Machine Learning enthusiast, and Front-End Developer.">
+    <meta property="twitter:image" content="images/portfolio-project.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Animation (Preloader) -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <div class="preloader-text">Loading Experience...</div>
+        </div>
+    </div>
+
+    <!-- Background Ambient Gradients -->
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo" id="nav-logo-link">
+                Rushit<span>.</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link active" id="nav-link-hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" id="nav-link-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-title">Rushit Prajapati</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typewriter" id="typewriter-text"
+                            data-words='["BCA Student", "AI & ML Enthusiast", "Front-End Developer"]'></span><span
+                            class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Building modern, responsive, and performance-optimized web experiences with cutting-edge
+                        technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/resume.pdf" download class="btn btn-primary" id="btn-download-resume">
+                            <i data-lucide="download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="btn-cta-contact">
+                            Let's Talk <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card glass-card">
+                        <div class="card-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="code-editor-content">
+                            <pre><code><span class="keyword">const</span> developer = {
+    name: <span class="string">"Rushit Prajapati"</span>,
+    role: <span class="string">"BCA & Developer"</span>,
+    passions: [<span class="string">"AI"</span>, <span class="string">"ML"</span>, <span class="string">"Web Dev"</span>],
+    status: <span class="string">"Always Learning"</span>
+};
+
+<span class="comment">// Fueling the future with code.</span>
+console.log(<span class="string">"Hello World!"</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-info glass-card">
+                        <h3>My Story</h3>
+                        <p class="bio-text">
+                            I am a passionate BCA student with a strong interest in Web Development, Artificial
+                            Intelligence, and Machine Learning. I enjoy creating responsive websites, learning new
+                            technologies, and building practical projects that solve real-world problems. My goal is to
+                            continuously improve my development skills and become a skilled software developer.
+                        </p>
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Status</span>
+                                <span class="detail-val">Student & Freelancer</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Interests</span>
+                                <span class="detail-val">AI/ML, Front-End, Automation</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-val">Gujarat, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-card glass-card">
+                        <h3>Education</h3>
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <div class="edu-icon-wrapper">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <div class="edu-content">
+                                    <h4 class="edu-degree">Bachelor of Computer Applications (BCA)</h4>
+                                    <p class="edu-meta">Current Year: 4th Year</p>
+                                    <p class="edu-spec">Specialization: Artificial Intelligence & Machine Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edu-skills-learned">
+                            <h4>Key Academic Skills</h4>
+                            <div class="skills-badges">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">C#</span>
+                                <span class="badge">.NET Basics</span>
+                                <span class="badge">Git & GitHub</span>
+                                <span class="badge">ML Fundamentals</span>
+                                <span class="badge">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">A visual breakdown of my technical expertise and familiarity.</p>
+
+                <div class="skills-grid">
+                    <!-- HTML Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon html-color">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h3 class="skill-name">HTML</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="95%"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                    </div>
+
+                    <!-- CSS Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon css-color">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <h3 class="skill-name">CSS</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon js-color">
+                                <i data-lucide="braces"></i>
+                            </div>
+                            <h3 class="skill-name">JavaScript</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Python Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon python-color">
+                                <i data-lucide="terminal"></i>
+                            </div>
+                            <h3 class="skill-name">Python</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <!-- C# Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon csharp-color">
+                                <i data-lucide="hash"></i>
+                            </div>
+                            <h3 class="skill-name">C#</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="70%"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <!-- Git Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon git-color">
+                                <i data-lucide="git-branch"></i>
+                            </div>
+                            <h3 class="skill-name">Git</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon github-color">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <h3 class="skill-name">GitHub</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon ml-color">
+                                <i data-lucide="cpu"></i>
+                            </div>
+                            <h3 class="skill-name">Machine Learning</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+
+                    <!-- AI Fundamentals Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon ai-color">
+                                <i data-lucide="brain-circuit"></i>
+                            </div>
+                            <h3 class="skill-name">AI Fundamentals</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Design Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon-header">
+                            <div class="skill-icon responsive-color">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <h3 class="skill-name">Responsive Design</h3>
+                        </div>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" data-progress="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Personal Portfolio Website -->
+                    <article class="project-card glass-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/portfolio-project.png" alt="Personal Portfolio Website Snapshot"
+                                class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A modern and fully responsive personal portfolio website built using HTML, CSS, and
+                                JavaScript. It features smooth animations, responsive layouts, and a clean UI to
+                                showcase my education, skills, and projects.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rushit0755/Gym_management_sys" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline" id="portfolio-code-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="#hero" class="btn btn-sm btn-primary" id="portfolio-demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Gym Management System (Featured Project) -->
+                    <article class="project-card glass-card featured">
+                        <span class="featured-badge"><i data-lucide="star"></i> Featured Project</span>
+                        <div class="project-image-wrapper">
+                            <img src="images/gym-project.png" alt="Gym Management System Snapshot" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Gym Management System</h3>
+                            <p class="project-description">
+                                A responsive Gym Management System developed using HTML, CSS, Python, Django and
+                                JavaScript. The project provides a modern interface for managing gym-related activities
+                                such as member registration, trainer information, membership plans, workout schedules,
+                                and contact details. The primary focus is a clean UI, responsive design, and a
+                                user-friendly experience.
+                            </p>
+                            <h4 class="features-title">Key Features:</h4>
+                            <ul class="features-list">
+                                <li>Responsive design</li>
+                                <li>Member registration section</li>
+                                <li>Membership plans & Trainer information</li>
+                                <li>Workout programs & Contact form</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS3</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">Python</span>
+                                <span class="badge">Django</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rushit0755/Gym_management_sys" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline" id="gym-code-link">
+                                    <i data-lucide="github"></i> View Source
+                                </a>
+                                <a href="https://github.com/rushit0755/Gym_management_sys" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-primary" id="gym-demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Python Mini Projects -->
+                    <article class="project-card glass-card">
+                        <div class="project-image-wrapper">
+                            <img src="images/python-project.png" alt="Python Mini Projects Snapshot"
+                                class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Python Mini Projects</h3>
+                            <p class="project-description">
+                                A collection of beginner-friendly Python mini projects created to strengthen programming
+                                fundamentals, problem-solving skills, and logical thinking. Includes key scripts,
+                                automation helpers, and basic math puzzles.
+                            </p>
+                            <div class="project-tags">
+                                <span class="badge">Python</span>
+                                <span class="badge">CLI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rushit0755/Gym_management_sys" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline" id="python-code-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info">
+                        <!-- Email Card -->
+                        <a href="mailto:rushit0755@gmail.com" class="contact-card glass-card" id="contact-email">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>rushit0755@gmail.com</p>
+                                <span class="contact-cta">Send an Email <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"></path></svg></span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Card -->
+                        <a href="https://wa.me/91879911870" target="_blank" rel="noopener noreferrer"
+                            class="contact-card glass-card" id="contact-whatsapp">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>+91 879911870</p>
+                                <span class="contact-cta">Chat on WhatsApp <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"></path></svg></span>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn Card -->
+                        <a href="https://www.linkedin.com/in/rushit-prajapati-00093236b/" target="_blank"
+                            rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>rushit-prajapati-00093236b</p>
+                                <span class="contact-cta">Connect on LinkedIn <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"></path></svg></span>
+                            </div>
+                        </a>
+
+                        <!-- Location Card -->
+                        <div class="contact-card glass-card" id="contact-location">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Nardipur, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Please enter your name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" placeholder="john@example.com"
+                                    required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Project Inquiry"
+                                    required>
+                                <span class="error-msg" id="subject-error">Please enter a subject.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5"
+                                    placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="message-error">Please enter your message.</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner btn-spinner hidden"></span>
+                            </button>
+                            <div id="form-status" class="form-status hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com/rushit0755/Gym_management_sys" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rushit-prajapati-00093236b/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:rushit0755@gmail.com" aria-label="Email Rushit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                </a>
+            </div>
+            <p class="footer-copy">
+                Designed & Developed by Rushit Prajapati 🤍
+            </p>
+            <p class="footer-year">
+                &copy; <span id="current-year"></span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
