@@ -369,4 +369,144 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
+
+    // ==========================================
+    // 10. CHATBOT WIDGET LOGIC
+    // ==========================================
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const chatbotClose = document.getElementById('chatbot-close');
+    const chatbotForm = document.getElementById('chatbot-form');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotSuggestions = document.getElementById('chatbot-suggestions');
+
+    // Bot Response Database
+    const botReplies = {
+        greeting: "Hello! I am Rushit's Virtual Assistant. 🤖 How can I help you today? Feel free to ask about my skills, projects, resume, or contact info!",
+        skills: "Rushit is skilled in **Web Development** (HTML, CSS, JavaScript, Responsive Design), **Backend Dev** (Python, Django), and **AI & Machine Learning** concepts. 🛠️",
+        projects: "Some of Rushit's notable projects are:\n1. **Gym Management System** (Django & JS)\n2. **Personal Portfolio** (HTML, CSS, JS)\n3. **Python Mini Projects**\n\nYou can see them in detail in the Projects section! 🚀",
+        resume: "You can download Rushit's resume by clicking the **'Download Resume'** button in the Hero section of the page! 📄",
+        contact: "You can reach out to Rushit via:\n📧 Email: **rushit0755@gmail.com**\n💬 WhatsApp: **+91 879911870**\n🔗 LinkedIn: **rushit-prajapati-00093236b**\n\nOr simply fill out the contact form on this page! 📞",
+        default: "I'm not sure I understand that. 🤔 You can ask me about 'skills', 'projects', 'resume', 'contact', or use the quick buttons below!"
+    };
+
+    let botGreetingSent = false;
+
+    // Toggle Chat Window
+    if (chatbotToggle && chatbotWindow) {
+        chatbotToggle.addEventListener('click', () => {
+            chatbotWindow.classList.toggle('hidden');
+            if (!chatbotWindow.classList.contains('hidden') && !botGreetingSent) {
+                // Send initial greeting on first open
+                sendBotReply(botReplies.greeting);
+                botGreetingSent = true;
+            }
+        });
+    }
+
+    if (chatbotClose && chatbotWindow) {
+        chatbotClose.addEventListener('click', () => {
+            chatbotWindow.classList.add('hidden');
+        });
+    }
+
+    // Function to append messages
+    const appendMessage = (text, sender) => {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `chat-msg ${sender}`;
+        
+        // Convert newlines to breaks and simple bold formatting
+        const formattedText = text
+            .replace(/\n/g, '<br>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+        msgDiv.innerHTML = formattedText;
+        chatbotMessages.appendChild(msgDiv);
+        
+        // Auto-scroll to bottom
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    };
+
+    // Send Bot Reply with Typing Animation
+    const sendBotReply = (replyText) => {
+        // Create typing indicator bubble
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'chat-msg bot typing-indicator';
+        typingDiv.innerHTML = `<div class="typing-dots"><span></span><span></span><span></span></div>`;
+        chatbotMessages.appendChild(typingDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+
+        // Simulate typing delay
+        setTimeout(() => {
+            // Remove typing indicator
+            typingDiv.remove();
+            
+            // Append actual message
+            appendMessage(replyText, 'bot');
+        }, 1200);
+    };
+
+    // Parse custom user inputs for keywords
+    const getBotResponse = (userInput) => {
+        const text = userInput.toLowerCase().trim();
+        
+        if (text.includes('hello') || text.includes('hi') || text.includes('hey') || text.includes('yo')) {
+            return "Hey there! How can I help you today? 😊";
+        }
+        if (text.includes('skill') || text.includes('languages') || text.includes('technologies') || text.includes('stack')) {
+            return botReplies.skills;
+        }
+        if (text.includes('project') || text.includes('work') || text.includes('portfolio')) {
+            return botReplies.projects;
+        }
+        if (text.includes('resume') || text.includes('cv') || text.includes('biodata')) {
+            return botReplies.resume;
+        }
+        if (text.includes('contact') || text.includes('email') || text.includes('phone') || text.includes('number') || text.includes('whatsapp') || text.includes('linkedin')) {
+            return botReplies.contact;
+        }
+        if (text.includes('name') || text.includes('who are you') || text.includes('your name')) {
+            return "I am Rushit's Virtual Assistant, built to help you navigate his portfolio site! 🤖";
+        }
+        if (text.includes('thanks') || text.includes('thank you')) {
+            return "You're welcome! Let me know if you need anything else. 👍";
+        }
+        
+        return botReplies.default;
+    };
+
+    // Handle Form Submission (User sending message)
+    if (chatbotForm && chatbotInput) {
+        chatbotForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userMsg = chatbotInput.value.trim();
+            if (!userMsg) return;
+
+            // 1. Append user message to UI
+            appendMessage(userMsg, 'user');
+            chatbotInput.value = '';
+
+            // 2. Get bot reply and send it
+            const response = getBotResponse(userMsg);
+            sendBotReply(response);
+        });
+    }
+
+    // Handle Suggestion Chips click
+    if (chatbotSuggestions) {
+        chatbotSuggestions.addEventListener('click', (e) => {
+            if (e.target.classList.contains('chat-suggest-chip')) {
+                const query = e.target.getAttribute('data-query');
+                const chipText = e.target.textContent;
+
+                // 1. Append chip selection as user message
+                appendMessage(chipText, 'user');
+
+                // 2. Send matching bot reply
+                const response = botReplies[query] || botReplies.default;
+                sendBotReply(response);
+            }
+        });
+    }
 });
