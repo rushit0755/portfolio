@@ -21,6 +21,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // 0. DARK / LIGHT MODE THEME TOGGLE
+    // ==========================================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+
+    // Apply saved theme on load (default: dark)
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    if (savedTheme === 'light') {
+        htmlEl.setAttribute('data-theme', 'light');
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlEl.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            if (newTheme === 'light') {
+                htmlEl.setAttribute('data-theme', 'light');
+            } else {
+                htmlEl.removeAttribute('data-theme');
+            }
+
+            localStorage.setItem('portfolio-theme', newTheme);
+        });
+    }
+
+    // ==========================================
     // 1. PRELOADER
     // ==========================================
     const preloader = document.getElementById('preloader');
