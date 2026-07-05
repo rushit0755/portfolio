@@ -387,8 +387,44 @@ console.log(<span class="string">"Hello World!"</span>);</code></pre>
                         </div>
                     </div>
                 </div>
+
+                <!-- ===== CHARTS ROW ===== -->
+                <div class="charts-row">
+
+                    <!-- Doughnut / Pie Chart -->
+                    <div class="chart-card glass-card" id="chart-pie-card">
+                        <div class="chart-card-header">
+                            <div class="chart-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                            </div>
+                            <h3 class="chart-card-title">Skill Category Distribution</h3>
+                        </div>
+                        <p class="chart-card-desc">Proportion of skills across different technology domains.</p>
+                        <div class="chart-canvas-wrapper">
+                            <canvas id="skillsPieChart" aria-label="Skill category pie chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Bar Chart -->
+                    <div class="chart-card glass-card" id="chart-bar-card">
+                        <div class="chart-card-header">
+                            <div class="chart-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                            </div>
+                            <h3 class="chart-card-title">Proficiency Overview</h3>
+                        </div>
+                        <p class="chart-card-desc">Detailed skill-by-skill proficiency level at a glance.</p>
+                        <div class="chart-canvas-wrapper chart-bar-wrapper">
+                            <canvas id="skillsBarChart" aria-label="Skills bar chart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ===== END CHARTS ROW ===== -->
+
             </div>
         </section>
+
 
         <!-- Projects Section -->
         <section class="projects section" id="projects">
@@ -743,6 +779,8 @@ console.log(<span class="string">"Hello World!"</span>);</code></pre>
         </div>
     </div>
 
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Custom Script -->
