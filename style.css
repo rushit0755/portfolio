@@ -2,38 +2,43 @@
    DESIGN SYSTEM & VARIABLES
    ========================================== */
 :root {
-    /* Color Palette - original Marvel Avengers futuristic theme */
-    --bg-base: #05060b;
-    --bg-surface: #0b0d18;
-    --bg-surface-hover: #141727;
-    
-    --color-primary: #00d8ff;    /* Arc Reactor Blue */
-    --color-secondary: #ff1a40;  /* Stark Laser Red */
-    --color-tertiary: #ffb81c;   /* Stark Gold Accent */
-    --color-success: #00ff88;    /* Gamma Green */
-    --color-error: #ff1a40;      /* Stark Laser Red */
-    
+    /* Color Palette - original Spider-Man futuristic theme */
+    --bg-base: #05060c;
+    --bg-surface: #0e0f1d;
+    --bg-surface-hover: #16182f;
+
+    --color-primary: #ff0040;
+    /* Spider-Man Red */
+    --color-secondary: #0066ff;
+    /* Spider-Man Royal Blue */
+    --color-tertiary: #ffffff;
+    /* Spider-Eye Silver/White */
+    --color-success: #00ff88;
+    /* Web Energy Green */
+    --color-error: #ff0040;
+    /* Spider-Man Red */
+
     --text-primary: #f1f5f9;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
-    
+
     /* Gradients */
-    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
-    --gradient-glow: linear-gradient(135deg, rgba(0, 216, 255, 0.15) 0%, rgba(255, 26, 64, 0.15) 100%);
-    --gradient-surface: linear-gradient(135deg, rgba(11, 13, 24, 0.8) 0%, rgba(5, 6, 11, 0.95) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-glow: linear-gradient(135deg, rgba(255, 0, 64, 0.15) 0%, rgba(0, 102, 255, 0.15) 100%);
+    --gradient-surface: linear-gradient(135deg, rgba(14, 15, 29, 0.8) 0%, rgba(5, 6, 12, 0.95) 100%);
     --gradient-text: linear-gradient(135deg, #ffffff 40%, var(--color-primary) 100%);
-    --gradient-ironman: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
-    --gradient-shield: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    
+    --gradient-ironman: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-shield: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+
     /* Glassmorphism Defaults */
-    --glass-bg: rgba(11, 13, 24, 0.7);
-    --glass-border: rgba(0, 216, 255, 0.12);
-    --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(255, 255, 255, 0.05), 0 0 20px rgba(0, 216, 255, 0.03);
+    --glass-bg: rgba(14, 15, 29, 0.7);
+    --glass-border: rgba(255, 0, 64, 0.12);
+    --glass-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), inset 0 1px 2px rgba(255, 255, 255, 0.05), 0 0 20px rgba(255, 0, 64, 0.03);
     --glass-blur: blur(15px);
-    
+
     /* Typography */
     --font-primary: 'Plus Jakarta Sans', sans-serif;
-    
+
     /* Animation & Transitions */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,28 +49,28 @@
    LIGHT MODE THEME (Jarvis Silver Interface)
    ========================================== */
 [data-theme="light"] {
-    --bg-base: #f0f4f8;
+    --bg-base: #f4f6fa;
     --bg-surface: #ffffff;
-    --bg-surface-hover: #e1e8f0;
+    --bg-surface-hover: #e6eaf3;
 
-    --color-primary: #0088cc;
-    --color-secondary: #cc1133;
-    --color-tertiary: #d89e00;
+    --color-primary: #e60036;
+    --color-secondary: #0052cc;
+    --color-tertiary: #1e293b;
     --color-success: #059669;
-    --color-error: #e11d48;
+    --color-error: #e60036;
 
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-muted: #94a3b8;
 
-    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
-    --gradient-glow: linear-gradient(135deg, rgba(0, 136, 204, 0.12) 0%, rgba(204, 17, 51, 0.12) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-glow: linear-gradient(135deg, rgba(230, 0, 54, 0.1) 0%, rgba(0, 82, 204, 0.1) 100%);
     --gradient-surface: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 100%);
     --gradient-text: linear-gradient(135deg, #0f172a 30%, var(--text-secondary) 100%);
 
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(0, 136, 204, 0.15);
-    --glass-shadow: 0 16px 40px rgba(0, 136, 204, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(230, 0, 54, 0.15);
+    --glass-shadow: 0 16px 40px rgba(230, 0, 54, 0.05);
     --glass-blur: blur(20px);
 }
 
@@ -196,9 +201,17 @@
     opacity: 0.25;
 }
 
-[data-theme="light"] .blob-1 { background: #60c0ff; }
-[data-theme="light"] .blob-2 { background: #c084fc; }
-[data-theme="light"] .blob-3 { background: #f0abfc; }
+[data-theme="light"] .blob-1 {
+    background: #60c0ff;
+}
+
+[data-theme="light"] .blob-2 {
+    background: #c084fc;
+}
+
+[data-theme="light"] .blob-3 {
+    background: #f0abfc;
+}
 
 [data-theme="light"] ::-webkit-scrollbar-track {
     background: #e8eeff;
@@ -213,9 +226,17 @@
     color: #1e293b;
 }
 
-[data-theme="light"] .keyword { color: #be185d; }
-[data-theme="light"] .string { color: #047857; }
-[data-theme="light"] .comment { color: #94a3b8; }
+[data-theme="light"] .keyword {
+    color: #be185d;
+}
+
+[data-theme="light"] .string {
+    color: #047857;
+}
+
+[data-theme="light"] .comment {
+    color: #94a3b8;
+}
 
 [data-theme="light"] .chatbot-messages {
     background: rgba(240, 244, 255, 0.5);
@@ -355,7 +376,9 @@ img {
     display: block;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     font-family: inherit;
     font-size: inherit;
     border: none;
@@ -584,7 +607,9 @@ input, textarea, button {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* ==========================================
@@ -630,7 +655,8 @@ input, textarea, button {
 .blob-3 {
     width: 400px;
     height: 400px;
-    background: #ec4899; /* Neon Pink details */
+    background: #ec4899;
+    /* Neon Pink details */
     top: 40%;
     left: 30%;
     animation-delay: -10s;
@@ -640,9 +666,11 @@ input, textarea, button {
     0% {
         transform: translate(0, 0) scale(1);
     }
+
     50% {
         transform: translate(100px, 50px) scale(1.1);
     }
+
     100% {
         transform: translate(-50px, 120px) scale(0.95);
     }
@@ -711,11 +739,13 @@ input, textarea, button {
     transition: var(--transition-fast);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--text-primary);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -795,7 +825,9 @@ input, textarea, button {
 }
 
 @keyframes blink {
-    to { visibility: hidden; }
+    to {
+        visibility: hidden;
+    }
 }
 
 .hero-description {
@@ -847,9 +879,17 @@ input, textarea, button {
     border-radius: 50%;
 }
 
-.dot-red { background-color: #ef4444; }
-.dot-yellow { background-color: #f59e0b; }
-.dot-green { background-color: #10b981; }
+.dot-red {
+    background-color: #ef4444;
+}
+
+.dot-yellow {
+    background-color: #f59e0b;
+}
+
+.dot-green {
+    background-color: #10b981;
+}
 
 .code-editor-content pre {
     font-family: 'Consolas', 'Fira Code', monospace;
@@ -859,9 +899,18 @@ input, textarea, button {
     overflow-x: auto;
 }
 
-.keyword { color: #f472b6; }
-.string { color: #34d399; }
-.comment { color: #64748b; font-style: italic; }
+.keyword {
+    color: #f472b6;
+}
+
+.string {
+    color: #34d399;
+}
+
+.comment {
+    color: #64748b;
+    font-style: italic;
+}
 
 .scroll-indicator {
     position: absolute;
@@ -893,9 +942,20 @@ input, textarea, button {
 }
 
 @keyframes scrollMouse {
-    0% { transform: translateY(0); opacity: 1; }
-    50% { transform: translateY(8px); opacity: 0.5; }
-    100% { transform: translateY(0); opacity: 1; }
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* ==========================================
@@ -908,11 +968,13 @@ input, textarea, button {
     align-items: stretch;
 }
 
-.about-info, .education-card {
+.about-info,
+.education-card {
     padding: 2.5rem;
 }
 
-.about-info h3, .education-card h3 {
+.about-info h3,
+.education-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -1067,16 +1129,65 @@ input, textarea, button {
 }
 
 /* Custom Skill Accents */
-.html-color { background: rgba(227, 79, 38, 0.1); color: #e34f26; border: 1px solid rgba(227, 79, 38, 0.2); }
-.css-color { background: rgba(21, 114, 182, 0.1); color: #1572b6; border: 1px solid rgba(21, 114, 182, 0.2); }
-.js-color { background: rgba(247, 223, 30, 0.1); color: #f7df1e; border: 1px solid rgba(247, 223, 30, 0.2); }
-.python-color { background: rgba(55, 118, 171, 0.1); color: #3776ab; border: 1px solid rgba(55, 118, 171, 0.2); }
-.csharp-color { background: rgba(35, 145, 35, 0.1); color: #239123; border: 1px solid rgba(35, 145, 35, 0.2); }
-.git-color { background: rgba(240, 80, 50, 0.1); color: #f05032; border: 1px solid rgba(240, 80, 50, 0.2); }
-.github-color { background: rgba(255, 255, 255, 0.1); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); }
-.ml-color { background: rgba(138, 43, 226, 0.1); color: var(--color-secondary); border: 1px solid rgba(138, 43, 226, 0.2); }
-.ai-color { background: rgba(0, 240, 255, 0.1); color: var(--color-primary); border: 1px solid rgba(0, 240, 255, 0.2); }
-.responsive-color { background: rgba(236, 72, 153, 0.1); color: #ec4899; border: 1px solid rgba(236, 72, 153, 0.2); }
+.html-color {
+    background: rgba(227, 79, 38, 0.1);
+    color: #e34f26;
+    border: 1px solid rgba(227, 79, 38, 0.2);
+}
+
+.css-color {
+    background: rgba(21, 114, 182, 0.1);
+    color: #1572b6;
+    border: 1px solid rgba(21, 114, 182, 0.2);
+}
+
+.js-color {
+    background: rgba(247, 223, 30, 0.1);
+    color: #f7df1e;
+    border: 1px solid rgba(247, 223, 30, 0.2);
+}
+
+.python-color {
+    background: rgba(55, 118, 171, 0.1);
+    color: #3776ab;
+    border: 1px solid rgba(55, 118, 171, 0.2);
+}
+
+.csharp-color {
+    background: rgba(35, 145, 35, 0.1);
+    color: #239123;
+    border: 1px solid rgba(35, 145, 35, 0.2);
+}
+
+.git-color {
+    background: rgba(240, 80, 50, 0.1);
+    color: #f05032;
+    border: 1px solid rgba(240, 80, 50, 0.2);
+}
+
+.github-color {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ml-color {
+    background: rgba(138, 43, 226, 0.1);
+    color: var(--color-secondary);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.ai-color {
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--color-primary);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.responsive-color {
+    background: rgba(236, 72, 153, 0.1);
+    color: #ec4899;
+    border: 1px solid rgba(236, 72, 153, 0.2);
+}
 
 .skill-name {
     font-size: 1.05rem;
@@ -1099,7 +1210,8 @@ input, textarea, button {
 
 .skill-progress {
     height: 100%;
-    width: 0; /* Animated dynamically with JS */
+    width: 0;
+    /* Animated dynamically with JS */
     background: var(--gradient-accent);
     border-radius: 10px;
     transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
@@ -1206,7 +1318,8 @@ input, textarea, button {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto; /* Push tags & links to bottom */
+    margin-top: auto;
+    /* Push tags & links to bottom */
     padding-top: 0.75rem;
 }
 
@@ -1293,7 +1406,8 @@ a.contact-card:hover {
     transition: var(--transition-fast);
 }
 
-.contact-icon i, .contact-icon svg {
+.contact-icon i,
+.contact-icon svg {
     width: 24px;
     height: 24px;
 }
@@ -1326,7 +1440,8 @@ a.contact-card:hover .contact-icon {
     margin-top: 0.5rem;
 }
 
-.contact-cta i, .contact-cta svg {
+.contact-cta i,
+.contact-cta svg {
     width: 14px;
     height: 14px;
     transition: transform var(--transition-fast);
@@ -1370,7 +1485,8 @@ a.contact-card:hover .contact-cta svg {
     letter-spacing: 0.02em;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 0.85rem 1.2rem;
     background: rgba(255, 255, 255, 0.02);
@@ -1380,7 +1496,8 @@ a.contact-card:hover .contact-cta svg {
     transition: var(--transition-fast);
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     border-color: var(--color-primary);
     background: rgba(0, 240, 255, 0.01);
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.1);
@@ -1393,7 +1510,8 @@ a.contact-card:hover .contact-cta svg {
     display: none;
 }
 
-.form-group.invalid input, .form-group.invalid textarea {
+.form-group.invalid input,
+.form-group.invalid textarea {
     border-color: var(--color-error);
     background: rgba(244, 63, 94, 0.01);
 }
@@ -1476,7 +1594,8 @@ a.contact-card:hover .contact-cta svg {
     background: rgba(255, 255, 255, 0.02);
 }
 
-.footer-socials a i, .footer-socials a svg {
+.footer-socials a i,
+.footer-socials a svg {
     width: 18px;
     height: 18px;
 }
@@ -1687,7 +1806,8 @@ a.contact-card:hover .contact-cta svg {
         grid-template-columns: 1fr;
     }
 
-    .about-info, .education-card {
+    .about-info,
+    .education-card {
         padding: 1.75rem;
     }
 
@@ -1825,11 +1945,13 @@ a.contact-card:hover .contact-cta svg {
     }
 
     /* ---- ABOUT ---- */
-    .about-info, .education-card {
+    .about-info,
+    .education-card {
         padding: 1.25rem;
     }
 
-    .about-info h3, .education-card h3 {
+    .about-info h3,
+    .education-card h3 {
         font-size: 1.25rem;
     }
 
@@ -1871,7 +1993,8 @@ a.contact-card:hover .contact-cta svg {
         margin-bottom: 1.5rem;
     }
 
-    .form-group input, .form-group textarea {
+    .form-group input,
+    .form-group textarea {
         font-size: 0.9rem;
         padding: 0.75rem 1rem;
     }
@@ -1929,14 +2052,15 @@ a.contact-card:hover .contact-cta svg {
    CHATBOT WIDGET STYLES (YELLOW & ORANGE GRADIENT)
    ========================================== */
 :root {
-    --gradient-chatbot: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
-    --chatbot-glow: rgba(249, 115, 22, 0.35);
+    --gradient-chatbot: linear-gradient(135deg, #ff0040 0%, #0066ff 100%);
+    --chatbot-glow: rgba(255, 0, 64, 0.35);
 }
 
 .chatbot-widget {
     position: fixed;
     bottom: 2rem;
-    right: 5.5rem;      /* sits left of the back-to-top button */
+    right: 5.5rem;
+    /* sits left of the back-to-top button */
     z-index: 999;
 }
 
@@ -2065,8 +2189,15 @@ a.contact-card:hover .contact-cta svg {
 }
 
 @keyframes messageFadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .chat-msg.bot {
@@ -2100,12 +2231,27 @@ a.contact-card:hover .contact-cta svg {
     animation: typingBlink 1.4s infinite both;
 }
 
-.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
-.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+.typing-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 @keyframes typingBlink {
-    0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
-    40% { opacity: 1; transform: scale(1.2); }
+
+    0%,
+    80%,
+    100% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+
+    40% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
 }
 
 /* Quick Suggestion Chips */
@@ -2208,43 +2354,46 @@ a.contact-card:hover .contact-cta svg {
 }
 
 /* ==========================================
-   MARVEL AVENGERS FUTURISTIC HUD OVERRIDES
+   SPIDER-MAN FUTURISTIC WEB-SLINGER OVERRIDES
    ========================================== */
 
-/* 1. Cyber Grid Background & Energy Core Blobs */
+/* 1. Cyber Web Grid Background & Energy Core Blobs */
 body {
     background-color: var(--bg-base);
-    background-image: 
-        radial-gradient(circle at 15% 15%, rgba(0, 216, 255, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(255, 26, 64, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, rgba(255, 184, 28, 0.03) 0%, transparent 60%),
-        linear-gradient(rgba(0, 216, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 216, 255, 0.03) 1px, transparent 1px);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(255, 0, 64, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 10% 20%, rgba(0, 102, 255, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(255, 0, 64, 0.06) 0%, transparent 40%),
+        linear-gradient(rgba(255, 0, 64, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 0, 64, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 45px 45px, 45px 45px;
     position: relative;
 }
 
-/* Ensure the ambient-bg blobs match the Avengers theme perfectly */
+/* Ensure the ambient-bg blobs match the Spider-Man theme perfectly */
 .blob-1 {
-    background: radial-gradient(circle, rgba(0, 216, 255, 0.25) 0%, rgba(0, 216, 255, 0) 70%) !important;
-}
-.blob-2 {
-    background: radial-gradient(circle, rgba(255, 26, 64, 0.22) 0%, rgba(255, 26, 64, 0) 70%) !important;
-}
-.blob-3 {
-    background: radial-gradient(circle, rgba(255, 184, 28, 0.18) 0%, rgba(255, 184, 28, 0) 70%) !important;
+    background: radial-gradient(circle, rgba(255, 0, 64, 0.25) 0%, rgba(255, 0, 64, 0) 70%) !important;
 }
 
-/* 2. Metallic Glassmorphism Cards with Tech Corner Brackets */
+.blob-2 {
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, rgba(0, 102, 255, 0) 70%) !important;
+}
+
+.blob-3 {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%) !important;
+}
+
+/* 2. Spidey Tech Glassmorphism Cards with Tech Web Brackets */
 .glass-card {
     position: relative;
-    background: linear-gradient(135deg, rgba(11, 13, 24, 0.8) 0%, rgba(6, 7, 13, 0.95) 100%);
-    border: 1px solid rgba(0, 216, 255, 0.18);
+    background: linear-gradient(135deg, rgba(14, 15, 29, 0.8) 0%, rgba(5, 6, 12, 0.95) 100%);
+    border: 1px solid rgba(255, 0, 64, 0.18);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.05);
-    overflow: visible; /* to allow corner accents to display */
+    overflow: visible;
+    /* to allow corner accents to display */
 }
 
-/* HUD brackets on cards */
+/* HUD Web brackets on cards */
 .glass-card::before,
 .glass-card::after {
     content: '';
@@ -2273,8 +2422,8 @@ body {
 }
 
 .glass-card:hover {
-    border-color: rgba(0, 216, 255, 0.35);
-    box-shadow: 0 20px 45px rgba(0, 216, 255, 0.08), 0 0 15px rgba(0, 216, 255, 0.05);
+    border-color: rgba(255, 0, 64, 0.35);
+    box-shadow: 0 20px 45px rgba(255, 0, 64, 0.08), 0 0 15px rgba(0, 102, 255, 0.05);
     transform: translateY(-4px);
 }
 
@@ -2288,14 +2437,14 @@ body {
 .glass-card:hover::after {
     width: 22px;
     height: 22px;
-    border-color: var(--color-primary);
-    filter: drop-shadow(0 0 5px var(--color-primary));
+    border-color: var(--color-secondary);
+    filter: drop-shadow(0 0 5px var(--color-secondary));
 }
 
-/* Light mode card adjustments for Jarvis look */
+/* Light mode card adjustments for Spidey Light look */
 [data-theme="light"] .glass-card {
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(0, 136, 204, 0.2);
+    border: 1px solid rgba(230, 0, 54, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -2311,7 +2460,7 @@ body {
 
 [data-theme="light"] .glass-card:hover {
     border-color: var(--color-primary);
-    box-shadow: 0 15px 35px rgba(0, 136, 204, 0.12);
+    box-shadow: 0 15px 35px rgba(230, 0, 54, 0.12);
 }
 
 [data-theme="light"] .glass-card:hover::before {
@@ -2320,15 +2469,15 @@ body {
 }
 
 [data-theme="light"] .glass-card:hover::after {
-    border-color: var(--color-primary);
+    border-color: var(--color-secondary);
     filter: none;
 }
 
 /* 3. Hero Visual Code Editor Customization */
 .hero-card {
-    border: 1px solid rgba(0, 216, 255, 0.25) !important;
+    border: 1px solid rgba(255, 0, 64, 0.25) !important;
     background: linear-gradient(135deg, rgba(8, 10, 20, 0.9) 0%, rgba(3, 4, 8, 0.98) 100%) !important;
-    box-shadow: 0 0 25px rgba(0, 216, 255, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 0 25px rgba(255, 0, 64, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.05) !important;
 }
 
 .hero-visual::before {
@@ -2337,22 +2486,24 @@ body {
     opacity: 0.7;
 }
 
-/* Glowing code words */
+/* Glowing code words in Spider Red and Blue */
 .keyword {
-    color: var(--color-secondary);
-    text-shadow: 0 0 8px rgba(255, 26, 64, 0.4);
+    color: var(--color-primary);
+    text-shadow: 0 0 8px rgba(255, 0, 64, 0.4);
 }
+
 .string {
-    color: var(--color-success);
-    text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+    color: var(--color-secondary);
+    text-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
 }
+
 .comment {
     color: #4a5568;
 }
 
-/* 4. Section Title Laser Glowing Underline */
+/* 4. Section Title Spidey Laser Underline */
 .section-title {
-    background: linear-gradient(90deg, #ffffff 10%, var(--color-primary) 50%, var(--color-tertiary) 90%);
+    background: linear-gradient(90deg, #ffffff 10%, var(--color-primary) 50%, var(--color-secondary) 90%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2364,76 +2515,77 @@ body {
     width: 150px !important;
     height: 3px !important;
     background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), var(--color-tertiary), var(--color-secondary), var(--color-primary), transparent) !important;
-    box-shadow: 0 0 10px rgba(0, 216, 255, 0.8) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.8) !important;
     border-radius: 10px !important;
 }
 
-/* 5. Sticky Navigation Bar High-Tech Border */
+/* 5. Sticky Navigation Bar Web Border */
 .header.sticky {
-    background: rgba(5, 6, 11, 0.85) !important;
-    border-bottom: 1px solid rgba(0, 216, 255, 0.2) !important;
-    box-shadow: 0 4px 30px rgba(0, 216, 255, 0.08) !important;
+    background: rgba(5, 6, 12, 0.85) !important;
+    border-bottom: 1px solid rgba(255, 0, 64, 0.2) !important;
+    box-shadow: 0 4px 30px rgba(255, 0, 64, 0.08) !important;
 }
 
 .nav-logo {
-    text-shadow: 0 0 12px rgba(0, 216, 255, 0.4);
+    text-shadow: 0 0 12px rgba(255, 0, 64, 0.4);
     font-weight: 800;
 }
 
 .nav-logo span {
     color: var(--color-secondary) !important;
-    text-shadow: 0 0 12px rgba(255, 26, 64, 0.6) !important;
+    text-shadow: 0 0 12px rgba(0, 102, 255, 0.6) !important;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--color-primary) !important;
-    text-shadow: 0 0 8px rgba(0, 216, 255, 0.3) !important;
+    text-shadow: 0 0 8px rgba(255, 0, 64, 0.3) !important;
 }
 
 .nav-link::after {
     background: var(--gradient-accent) !important;
 }
 
-/* 6. Education Timeline Glow */
+/* 6. Education Timeline Web Shooter Thread Line */
 .edu-timeline::before {
     background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary), var(--color-tertiary)) !important;
     box-shadow: 0 0 8px var(--color-primary);
 }
 
 .edu-icon-wrapper {
-    background: #0b0d18 !important;
+    background: #0e0f1d !important;
     border: 2px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
-    box-shadow: 0 0 12px rgba(0, 216, 255, 0.4) !important;
+    box-shadow: 0 0 12px rgba(255, 0, 64, 0.4) !important;
 }
 
 .edu-item:hover .edu-icon-wrapper {
     border-color: var(--color-secondary) !important;
     color: var(--color-secondary) !important;
-    box-shadow: 0 0 15px rgba(255, 26, 64, 0.6) !important;
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.6) !important;
     transform: scale(1.1);
 }
 
 .edu-meta {
     color: var(--color-primary) !important;
-    text-shadow: 0 0 5px rgba(0, 216, 255, 0.2);
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.2);
 }
 
-/* 7. Skill Cards Custom Badges & Progress Indicators */
+/* 7. Skill Cards Web Shooter Power Gauges */
 .skill-card {
-    border: 1px solid rgba(0, 216, 255, 0.12) !important;
+    border: 1px solid rgba(255, 0, 64, 0.12) !important;
 }
 
 .skill-progress-bar {
     background: rgba(0, 0, 0, 0.4) !important;
-    border: 1px solid rgba(0, 216, 255, 0.15) !important;
+    border: 1px solid rgba(255, 0, 64, 0.15) !important;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5) !important;
     overflow: visible !important;
 }
 
 .skill-progress {
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-tertiary)) !important;
-    box-shadow: 0 0 10px rgba(0, 216, 255, 0.6) !important;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.6) !important;
     position: relative;
 }
 
@@ -2452,35 +2604,35 @@ body {
 
 .skill-card:hover {
     border-color: var(--color-primary) !important;
-    box-shadow: 0 10px 25px rgba(0, 216, 255, 0.08) !important;
+    box-shadow: 0 10px 25px rgba(255, 0, 64, 0.08) !important;
 }
 
 .badge {
     border-radius: 4px !important;
     border: 1px solid var(--color-primary) !important;
-    background: rgba(0, 216, 255, 0.05) !important;
-    box-shadow: 0 0 5px rgba(0, 216, 255, 0.1) !important;
+    background: rgba(255, 0, 64, 0.05) !important;
+    box-shadow: 0 0 5px rgba(255, 0, 64, 0.1) !important;
 }
 
 .badge:hover {
     background: var(--gradient-accent) !important;
     color: #ffffff !important;
-    box-shadow: 0 4px 12px rgba(255, 26, 64, 0.3) !important;
+    box-shadow: 0 4px 12px rgba(255, 0, 64, 0.3) !important;
 }
 
-/* 8. Projects Featured Badges & Links */
+/* 8. Projects Spide-Tech Badges & Links */
 .featured-badge {
     background: var(--gradient-ironman) !important;
     color: #ffffff !important;
     font-weight: 700;
-    box-shadow: 0 0 15px rgba(255, 26, 64, 0.5) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.5) !important;
     letter-spacing: 0.05em;
-    border: 1px solid var(--color-tertiary) !important;
+    border: 1px solid var(--color-secondary) !important;
 }
 
 .features-title {
     color: var(--color-primary) !important;
-    text-shadow: 0 0 5px rgba(0, 216, 255, 0.2);
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.2);
 }
 
 .features-list li::before {
@@ -2488,24 +2640,24 @@ body {
     text-shadow: 0 0 5px var(--color-secondary);
 }
 
-/* 9. Contact Card Glow */
+/* 9. Contact Card Spidey Glow */
 .contact-icon {
-    background: rgba(0, 216, 255, 0.05) !important;
-    border: 1px solid rgba(0, 216, 255, 0.18) !important;
+    background: rgba(255, 0, 64, 0.05) !important;
+    border: 1px solid rgba(255, 0, 64, 0.18) !important;
     color: var(--color-primary) !important;
-    box-shadow: 0 0 8px rgba(0, 216, 255, 0.1) !important;
+    box-shadow: 0 0 8px rgba(255, 0, 64, 0.1) !important;
 }
 
 a.contact-card:hover {
     border-color: var(--color-primary) !important;
-    background: rgba(0, 216, 255, 0.02) !important;
-    box-shadow: 0 0 15px rgba(0, 216, 255, 0.05) !important;
+    background: rgba(255, 0, 64, 0.02) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.05) !important;
 }
 
 a.contact-card:hover .contact-icon {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%) !important;
     color: #ffffff !important;
-    box-shadow: 0 0 15px rgba(0, 216, 255, 0.5) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.5) !important;
     border-color: transparent !important;
 }
 
@@ -2514,25 +2666,27 @@ a.contact-card:hover .contact-icon {
 }
 
 .contact-form-wrapper h3 {
-    border-left-color: var(--color-secondary) !important;
+    border-left-color: var(--color-primary) !important;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     background: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 216, 255, 0.15) !important;
+    border: 1px solid rgba(255, 0, 64, 0.15) !important;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     border-color: var(--color-primary) !important;
-    background: rgba(0, 216, 255, 0.02) !important;
-    box-shadow: 0 0 12px rgba(0, 216, 255, 0.2) !important;
+    background: rgba(255, 0, 64, 0.02) !important;
+    box-shadow: 0 0 12px rgba(255, 0, 64, 0.2) !important;
 }
 
-/* 10. J.A.R.V.I.S. Interactive Chatbot Core (Arc Reactor Widget) */
+/* 10. Spider-Drone Interactive Chatbot Core */
 .chatbot-toggle {
-    background: radial-gradient(circle, #0b0d18 30%, var(--color-primary) 100%) !important;
+    background: radial-gradient(circle, #0e0f1d 30%, var(--color-primary) 100%) !important;
     border: 2px solid var(--color-primary) !important;
-    box-shadow: 0 0 25px rgba(0, 216, 255, 0.6), inset 0 0 12px rgba(0, 216, 255, 0.4) !important;
+    box-shadow: 0 0 25px rgba(255, 0, 64, 0.6), inset 0 0 12px rgba(255, 0, 64, 0.4) !important;
     color: var(--color-primary) !important;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -2540,7 +2694,7 @@ a.contact-card:hover .contact-icon {
 .chatbot-toggle:hover {
     transform: scale(1.1) rotate(360deg) !important;
     border-color: var(--color-secondary) !important;
-    box-shadow: 0 0 35px rgba(255, 26, 64, 0.8), inset 0 0 15px rgba(255, 26, 64, 0.5) !important;
+    box-shadow: 0 0 35px rgba(0, 102, 255, 0.8), inset 0 0 15px rgba(0, 102, 255, 0.5) !important;
 }
 
 .chatbot-toggle svg {
@@ -2555,14 +2709,14 @@ a.contact-card:hover .contact-icon {
 
 .chatbot-window {
     background: linear-gradient(135deg, rgba(8, 10, 20, 0.95) 0%, rgba(3, 4, 8, 0.98) 100%) !important;
-    border: 1px solid rgba(0, 216, 255, 0.25) !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 216, 255, 0.15) !important;
+    border: 1px solid rgba(255, 0, 64, 0.25) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 0, 64, 0.15) !important;
 }
 
 .chatbot-header {
     background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)) !important;
     color: #ffffff !important;
-    border-bottom: 1px solid rgba(0, 216, 255, 0.3) !important;
+    border-bottom: 1px solid rgba(255, 0, 64, 0.3) !important;
 }
 
 .chatbot-header h4 {
@@ -2570,42 +2724,42 @@ a.contact-card:hover .contact-icon {
 }
 
 .chatbot-avatar {
-    background: rgba(0, 216, 255, 0.2) !important;
-    border: 1px solid rgba(0, 216, 255, 0.4) !important;
-    box-shadow: 0 0 10px rgba(0, 216, 255, 0.3) !important;
+    background: rgba(255, 0, 64, 0.2) !important;
+    border: 1px solid rgba(255, 0, 64, 0.4) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.3) !important;
 }
 
 .chat-msg.bot {
-    background: rgba(0, 216, 255, 0.05) !important;
-    border: 1px solid rgba(0, 216, 255, 0.15) !important;
+    background: rgba(255, 0, 64, 0.03) !important;
+    border: 1px solid rgba(255, 0, 64, 0.12) !important;
     color: var(--text-primary) !important;
 }
 
 .chat-msg.user {
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-tertiary)) !important;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) !important;
     color: #ffffff !important;
     border-bottom-right-radius: 2px !important;
     font-weight: 500 !important;
-    box-shadow: 0 0 12px rgba(255, 26, 64, 0.3) !important;
+    box-shadow: 0 0 12px rgba(255, 0, 64, 0.3) !important;
 }
 
 .chat-suggest-chip {
-    background: rgba(0, 216, 255, 0.06) !important;
-    border: 1px solid rgba(0, 216, 255, 0.2) !important;
+    background: rgba(255, 0, 64, 0.05) !important;
+    border: 1px solid rgba(255, 0, 64, 0.18) !important;
     color: var(--color-primary) !important;
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.02) !important;
 }
 
 .chat-suggest-chip:hover {
     background: var(--color-primary) !important;
-    color: #05060b !important;
-    box-shadow: 0 0 15px rgba(0, 216, 255, 0.5) !important;
+    color: #05060c !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.5) !important;
     border-color: transparent !important;
 }
 
 .chatbot-input-form {
-    background: rgba(5, 6, 11, 0.8) !important;
-    border-top: 1px solid rgba(0, 216, 255, 0.15) !important;
+    background: rgba(5, 6, 12, 0.8) !important;
+    border-top: 1px solid rgba(255, 0, 64, 0.15) !important;
 }
 
 .chatbot-send-btn {
@@ -2619,12 +2773,12 @@ a.contact-card:hover .contact-icon {
 /* Light mode Chat adjustments */
 [data-theme="light"] .chatbot-window {
     background: rgba(255, 255, 255, 0.95) !important;
-    border-color: rgba(0, 136, 204, 0.2) !important;
+    border-color: rgba(230, 0, 54, 0.2) !important;
 }
 
 [data-theme="light"] .chat-msg.bot {
-    background: rgba(0, 136, 204, 0.05) !important;
-    border-color: rgba(0, 136, 204, 0.15) !important;
+    background: rgba(230, 0, 54, 0.05) !important;
+    border-color: rgba(230, 0, 54, 0.15) !important;
 }
 
 [data-theme="light"] .chatbot-toggle {
@@ -2633,68 +2787,69 @@ a.contact-card:hover .contact-icon {
 }
 
 [data-theme="light"] .chatbot-toggle:hover {
-    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4) !important;
+    box-shadow: 0 4px 20px rgba(230, 0, 54, 0.4) !important;
 }
 
-/* 11. Buttons & Action Links */
+/* 11. Spidey Buttons & Action Links */
 .btn-primary {
     color: #ffffff !important;
     border: 1px solid var(--color-primary) !important;
-    box-shadow: 0 0 15px rgba(0, 216, 255, 0.3) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.3) !important;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
     letter-spacing: 0.05em !important;
     overflow: hidden !important;
 }
 
 .btn-primary:hover {
-    box-shadow: 0 0 25px rgba(255, 26, 64, 0.6), 0 0 10px var(--color-tertiary) !important;
-    border-color: var(--color-tertiary) !important;
+    box-shadow: 0 0 25px rgba(255, 0, 64, 0.6), 0 0 10px var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
     transform: translateY(-3px) !important;
 }
 
 .btn-outline {
     color: var(--text-primary) !important;
-    border: 2px solid rgba(0, 216, 255, 0.3) !important;
-    background: rgba(0, 216, 255, 0.05) !important;
-    text-shadow: 0 0 5px rgba(0, 216, 255, 0.3) !important;
+    border: 2px solid rgba(255, 0, 64, 0.3) !important;
+    background: rgba(255, 0, 64, 0.05) !important;
+    text-shadow: 0 0 5px rgba(255, 0, 64, 0.3) !important;
 }
 
 .btn-outline:hover {
     border-color: var(--color-secondary) !important;
-    background: rgba(255, 26, 64, 0.1) !important;
-    box-shadow: 0 0 20px rgba(255, 26, 64, 0.4) !important;
+    background: rgba(0, 102, 255, 0.1) !important;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.4) !important;
     color: #ffffff !important;
     transform: translateY(-3px) !important;
 }
 
-/* 12. Preloader Futuristic Styling */
+/* 12. Preloader Spider-Web Spinner */
 .spinner {
-    border: 4px solid rgba(0, 216, 255, 0.1) !important;
+    border: 4px solid rgba(255, 0, 64, 0.1) !important;
     border-top-color: var(--color-primary) !important;
-    box-shadow: 0 0 20px rgba(0, 216, 255, 0.4) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 64, 0.4) !important;
     position: relative !important;
 }
 
 .spinner::after {
     content: '';
     position: absolute;
-    top: -4px; left: -4px; right: -4px; bottom: -4px;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
     border: 2px solid transparent;
     border-bottom-color: var(--color-secondary);
     border-radius: 50%;
     animation: spin 2s infinite linear reverse;
 }
 
-/* 13. Back to Top Laser Button */
+/* 13. Back to Top Web Shooter Button */
 .back-to-top {
     border: 1px solid var(--color-primary) !important;
-    box-shadow: 0 0 15px rgba(0, 216, 255, 0.4) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 64, 0.4) !important;
 }
 
 .back-to-top:hover {
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%) !important;
-    box-shadow: 0 0 25px rgba(255, 26, 64, 0.6), 0 0 10px var(--color-tertiary) !important;
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.6), 0 0 10px var(--color-tertiary) !important;
     border-color: var(--color-tertiary) !important;
 }
-
-
