@@ -2526,6 +2526,12 @@ body {
     box-shadow: 0 4px 30px rgba(255, 0, 64, 0.08) !important;
 }
 
+[data-theme="light"] .header.sticky {
+    background: rgba(244, 246, 250, 0.85) !important;
+    border-bottom: 1px solid rgba(230, 0, 54, 0.15) !important;
+    box-shadow: 0 4px 30px rgba(230, 0, 54, 0.05) !important;
+}
+
 .nav-logo {
     text-shadow: 0 0 12px rgba(255, 0, 64, 0.4);
     font-weight: 800;
