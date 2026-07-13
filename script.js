@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
         skills: "Rushit is skilled in **Web Development** (HTML, CSS, JavaScript, Responsive Design), **Backend Dev** (Python, Django), and **AI & Machine Learning** concepts. 🛠️",
         projects: "Some of Rushit's notable projects are:\n1. **Gym Management System** (Django & JS)\n2. **Personal Portfolio** (HTML, CSS, JS)\n3. **Python Mini Projects**\n\nYou can see them in detail in the Projects section! 🚀",
         resume: "You can download Rushit's resume by clicking the **'Download Resume'** button in the Hero section of the page! 📄",
-        contact: "You can reach out to Rushit via:\n📧 Email: **rushit0755@gmail.com**\n💬 WhatsApp: **+91 879911870**\n🔗 LinkedIn: **rushit-prajapati-00093236b**\n\nOr simply fill out the contact form on this page! 📞",
+        contact: "You can reach out to Rushit via:\n📧 Email: **rushit0755@gmail.com**\n💬 WhatsApp: **+91 879911870**\n🔗 LinkedIn: **rushit-prajapati-00093236b**\n📸 Instagram: **@rushit0755**\n\nOr simply fill out the contact form on this page! 📞",
         default: "I'm not sure I understand that. 🤔 You can ask me about 'skills', 'projects', 'resume', 'contact', or use the quick buttons below!"
     };
 
@@ -490,7 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (text.includes('resume') || text.includes('cv') || text.includes('biodata')) {
             return botReplies.resume;
         }
-        if (text.includes('contact') || text.includes('email') || text.includes('phone') || text.includes('number') || text.includes('whatsapp') || text.includes('linkedin')) {
+        if (text.includes('contact') || text.includes('email') || text.includes('phone') || text.includes('number') || text.includes('whatsapp') || text.includes('linkedin') || text.includes('instagram') || text.includes('insta')) {
             return botReplies.contact;
         }
         if (text.includes('name') || text.includes('who are you') || text.includes('your name')) {
